@@ -90,9 +90,12 @@
 
         <input
         type="text"
-        id="street">
+        id="street"
+        (blur)="validateStreet()">
 
-        <small id="streetError">
+        <small id="streetError"
+       style="display:none;">
+
           ⓘ Please fill this field to continue
         </small>
 
@@ -190,9 +193,11 @@
 
         <input
         type="email"
-        id="email">
+        id="email"
+          (blur)="validateEmail()">
 
-        <small id="emailError">
+        <small id="emailError"
+         style="display:none;">
           ⓘ Please fill this field to continue
         </small>
 
@@ -208,9 +213,11 @@
 
         <input
         type="text"
-        id="trn">
+        id="trn"
+        (blur)="validateTrn()">
 
-        <small id="trnError">
+        <small id="trnError"
+         style="display:none;">
           ⓘ Please fill this field to continue
         </small>
 
@@ -224,7 +231,8 @@
           ID Type <span>*</span>
         </label>
 
-        <select id="idType">
+        <select id="idType"
+        (blur)="validateIdType()">
 
           <option>Select</option>
 
@@ -236,7 +244,8 @@
 
         </select>
 
-        <small id="idTypeError">
+        <small id="idTypeError"
+         style="display:none;">
           ⓘ Please fill this field to continue
         </small>
 
@@ -252,9 +261,11 @@
 
         <input
         type="text"
-        id="idNumber">
+        id="idNumber"
+        (blur)="validateIdNumber()" >
 
-        <small id="idNumberError">
+        <small id="idNumberError"
+        tyle="display:none;">
           ⓘ Please fill this field to continue
         </small>
 
@@ -272,9 +283,16 @@
         type="date"
         id="expiry">
 
-        <small id="expiryError">
+        <!-- <small id="expiryError">
           ⓘ Please fill this field to continue
-        </small>
+        </small> -->
+        <small
+  id="expiryError"
+  style="display:none;">
+
+    ⓘ Please fill this field to continue
+
+  </small>
 
       </div>
 
