@@ -1,1 +1,244 @@
-<p>address works!</p>
+<nav>
+
+  <ul>
+
+    <li>
+      <a routerLink="/">
+        Home
+      </a>
+    </li>
+
+    <li>Supreme Ventures Gaming</li>
+
+    <li>Lottery Games</li>
+
+    <li>JustBet ▼</li>
+
+    <li>Acropolis Gaming</li>
+
+    <li>Help ▼</li>
+
+  </ul>
+
+  <div class="btns">
+
+    <button class="login-btn">
+      Login
+    </button>
+
+    <button class="register-btn">
+      Registration
+    </button>
+
+    <button class="download-btn">
+      Download
+    </button>
+
+  </div>
+
+</nav>
+
+<section class="address-section">
+
+  <div class="big-circle"></div>
+
+  <div class="small-circle"></div>
+
+  <div class="address-content">
+
+    <h1>
+      Registration
+    </h1>
+
+    <div class="steps">
+
+      <div class="step done">✔</div>
+
+      <div class="line active-line"></div>
+
+      <div class="step done">✔</div>
+
+      <div class="line active-line"></div>
+
+      <div class="step done">✔</div>
+
+      <div class="line active-line"></div>
+
+      <div class="step active"></div>
+
+      <div class="line"></div>
+
+      <div class="step"></div>
+
+    </div>
+
+    <div class="address-box">
+
+      <h2>
+        Permanent Address and Identification
+      </h2>
+
+      <div class="input-group">
+
+        <label>
+          Street Address <span>*</span>
+        </label>
+
+        <input type="text">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          Apartment/Suite
+        </label>
+
+        <input type="text">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          Parish <span>*</span>
+        </label>
+
+        <select>
+
+          <option>Select</option>
+
+        </select>
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          Town <span>*</span>
+        </label>
+
+        <select>
+
+          <option>Select</option>
+
+        </select>
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          District <span>*</span>
+        </label>
+
+        <select>
+
+          <option>Select</option>
+
+        </select>
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          Email Address <span>*</span>
+        </label>
+
+        <input type="email">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          TRN <span>*</span>
+        </label>
+
+        <input type="text">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          ID Type <span>*</span>
+        </label>
+
+        <select>
+
+          <option>Select</option>
+
+        </select>
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          ID Number <span>*</span>
+        </label>
+
+        <input type="text">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          ID Expiration Date <span>*</span>
+        </label>
+
+        <input type="date">
+
+      </div>
+
+      <div class="upload-text">
+
+        Please upload a copy of your Government Issued
+        Photo ID below:
+
+      </div>
+
+      <div class="upload-boxes">
+
+        <div class="upload-card">
+
+          Click here to upload Front of ID
+
+        </div>
+
+        <div class="upload-card">
+
+          Click here to upload Back of ID
+
+        </div>
+
+      </div>
+
+      <div class="btn-row">
+
+        <button
+        class="back-btn"
+        (click)="goBack()">
+
+          Back
+
+        </button>
+
+        <button
+        class="continue-btn"
+        (click)="saveAndContinue()">
+
+          Save and Continue
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
