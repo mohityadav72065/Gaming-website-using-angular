@@ -15,7 +15,7 @@ export class Personal {
 
   saveAndContinue() {
 
-    alert('Next Registration Step');
+    this.router.navigate(['/address']);
 
   }
 
