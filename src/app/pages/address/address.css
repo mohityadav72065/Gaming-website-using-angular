@@ -1,0 +1,247 @@
+:host{
+  display:block;
+  background:#f3f3f3;
+  min-height:100vh;
+  font-family:Arial;
+}
+
+body{
+  margin:0;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+  background:white;
+  border-top:4px solid #234d7d;
+  border-bottom:3px solid #4a963f;
+}
+
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+nav ul li{
+  color:#555;
+  font-size:15px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#555;
+}
+
+.btns{
+  display:flex;
+  gap:15px;
+}
+
+.btns button{
+  border:none;
+  padding:12px 35px;
+  border-radius:4px;
+  color:white;
+  cursor:pointer;
+}
+
+.login-btn{
+  background:#e79a47;
+}
+
+.register-btn{
+  background:#4a963f;
+}
+
+.download-btn{
+  background:#3e79d1;
+}
+
+.address-section{
+  position:relative;
+  padding:30px;
+  overflow:hidden;
+}
+
+.big-circle{
+  position:absolute;
+  width:320px;
+  height:320px;
+  border-radius:50%;
+  left:50px;
+  top:20px;
+  background:repeating-linear-gradient(
+    45deg,
+    #efc99d,
+    #efc99d 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.small-circle{
+  position:absolute;
+  width:100px;
+  height:100px;
+  border:4px solid #9bc99a;
+  border-radius:50%;
+  right:100px;
+  top:250px;
+}
+
+.address-content{
+  width:100%;
+  max-width:700px;
+  margin:auto;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.address-content h1{
+  color:#4a963f;
+  font-weight:500;
+}
+
+.steps{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:30px 0;
+}
+
+.step{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:4px solid #777;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+}
+
+.done{
+  border-color:#4a963f;
+  color:#4a963f;
+}
+
+.active{
+  border-color:#e79a47;
+}
+
+.line{
+  width:90px;
+  height:4px;
+  background:#777;
+}
+
+.active-line{
+  background:#4a963f;
+}
+
+.address-box{
+  background:#f7f7f7;
+  border:4px solid #4a963f;
+  border-radius:10px;
+  padding:30px;
+  max-height:700px;
+  overflow-y:auto;
+}
+
+.address-box h2{
+  color:#4a963f;
+  margin-bottom:25px;
+}
+
+.input-group{
+  position:relative;
+  margin-bottom:25px;
+}
+
+.input-group label{
+  position:absolute;
+  top:-10px;
+  left:15px;
+  background:#f7f7f7;
+  padding:0 5px;
+  color:#4a963f;
+}
+
+.input-group span{
+  color:red;
+}
+
+.input-group input,
+.input-group select{
+  width:100%;
+  height:48px;
+  border:2px solid #ccc;
+  border-radius:4px;
+  padding:0 12px;
+  box-sizing:border-box;
+  font-size:15px;
+}
+
+.upload-text{
+  color:#4a963f;
+  font-size:28px;
+  margin:40px 0 20px;
+}
+
+.upload-boxes{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  margin-bottom:30px;
+}
+
+.upload-card{
+  width:220px;
+  height:120px;
+  border:3px dashed #4a963f;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  background:#f3f3f3;
+}
+
+.btn-row{
+  display:flex;
+  gap:15px;
+}
+
+.back-btn{
+  flex:1;
+  height:45px;
+  border:none;
+  border-radius:4px;
+  background:#666;
+  color:white;
+}
+
+.continue-btn{
+  flex:2;
+  height:45px;
+  border:none;
+  border-radius:4px;
+  background:#4a963f;
+  color:white;
+}
+
+@media(max-width:768px){
+
+  .upload-boxes{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .line{
+    width:40px;
+  }
+
+}
