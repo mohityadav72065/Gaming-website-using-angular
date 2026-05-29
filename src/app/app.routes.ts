@@ -5,7 +5,7 @@ import { Register } from './pages/register/register';
 import { Verify } from './pages/verify/verify';
 import { Terms } from './pages/terms/terms';
 import { Personal } from './pages/personal/personal';
-import { AddressComponent } from './pages/address/address';
+import { Address } from './pages/address/address';
 
 export const routes: Routes = [
 
