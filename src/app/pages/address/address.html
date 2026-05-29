@@ -44,7 +44,9 @@
 
   <div class="small-circle"></div>
 
-  <div class="address-content">
+  <div class="small-circle-two"></div>
+
+  <div class="address-container">
 
     <h1>
       Registration
@@ -72,11 +74,13 @@
 
     </div>
 
-    <div class="address-box">
+    <div class="address-card">
 
       <h2>
         Permanent Address and Identification
       </h2>
+
+      <!-- STREET -->
 
       <div class="input-group">
 
@@ -84,9 +88,21 @@
           Street Address <span>*</span>
         </label>
 
-        <input type="text">
+        <input
+        type="text"
+        id="street">
+
+        <small id="streetError">
+          ⓘ Please fill this field to continue
+        </small>
+
+        <p class="note">
+          * Residential only, No PO Box
+        </p>
 
       </div>
+
+      <!-- APARTMENT -->
 
       <div class="input-group">
 
@@ -98,19 +114,33 @@
 
       </div>
 
+      <!-- PARISH -->
+
       <div class="input-group">
 
         <label>
           Parish <span>*</span>
         </label>
 
-        <select>
+        <select id="parish">
 
           <option>Select</option>
 
+          <option>Kingston</option>
+
+          <option>St. Andrew</option>
+
+          <option>Clarendon</option>
+
         </select>
 
+        <small id="parishError">
+          ⓘ Please fill this field to continue
+        </small>
+
       </div>
+
+      <!-- TOWN -->
 
       <div class="input-group">
 
@@ -118,13 +148,19 @@
           Town <span>*</span>
         </label>
 
-        <select>
+        <select id="town">
 
           <option>Select</option>
+
+          <option>Spanish Town</option>
+
+          <option>Portmore</option>
 
         </select>
 
       </div>
+
+      <!-- DISTRICT -->
 
       <div class="input-group">
 
@@ -132,13 +168,19 @@
           District <span>*</span>
         </label>
 
-        <select>
+        <select id="district">
 
           <option>Select</option>
+
+          <option>District 1</option>
+
+          <option>District 2</option>
 
         </select>
 
       </div>
+
+      <!-- EMAIL -->
 
       <div class="input-group">
 
@@ -146,9 +188,17 @@
           Email Address <span>*</span>
         </label>
 
-        <input type="email">
+        <input
+        type="email"
+        id="email">
+
+        <small id="emailError">
+          ⓘ Please fill this field to continue
+        </small>
 
       </div>
+
+      <!-- TRN -->
 
       <div class="input-group">
 
@@ -156,9 +206,17 @@
           TRN <span>*</span>
         </label>
 
-        <input type="text">
+        <input
+        type="text"
+        id="trn">
+
+        <small id="trnError">
+          ⓘ Please fill this field to continue
+        </small>
 
       </div>
+
+      <!-- ID TYPE -->
 
       <div class="input-group">
 
@@ -166,13 +224,25 @@
           ID Type <span>*</span>
         </label>
 
-        <select>
+        <select id="idType">
 
           <option>Select</option>
 
+          <option>Driver's License</option>
+
+          <option>Passport</option>
+
+          <option>National ID</option>
+
         </select>
 
+        <small id="idTypeError">
+          ⓘ Please fill this field to continue
+        </small>
+
       </div>
+
+      <!-- ID NUMBER -->
 
       <div class="input-group">
 
@@ -180,9 +250,17 @@
           ID Number <span>*</span>
         </label>
 
-        <input type="text">
+        <input
+        type="text"
+        id="idNumber">
+
+        <small id="idNumberError">
+          ⓘ Please fill this field to continue
+        </small>
 
       </div>
+
+      <!-- DATE -->
 
       <div class="input-group">
 
@@ -190,32 +268,90 @@
           ID Expiration Date <span>*</span>
         </label>
 
-        <input type="date">
+        <input
+        type="date"
+        id="expiry">
+
+        <small id="expiryError">
+          ⓘ Please fill this field to continue
+        </small>
 
       </div>
 
-      <div class="upload-text">
+      <!-- UPLOAD -->
+
+      <div class="upload-title">
 
         Please upload a copy of your Government Issued
         Photo ID below:
 
       </div>
 
-      <div class="upload-boxes">
+      <p class="upload-subtitle">
 
-        <div class="upload-card">
+        (Make sure the ID uploaded is visible and the information can be clearly read)
 
-          Click here to upload Front of ID
+      </p>
+
+      <div class="upload-row">
+
+        <div class="upload-box">
+
+          <div class="upload-inner">
+            Click here to upload Front of ID
+          </div>
+
+          <p>(Front of ID)</p>
 
         </div>
 
-        <div class="upload-card">
+        <div class="upload-box">
 
-          Click here to upload Back of ID
+          <div class="upload-inner">
+            Click here to upload Back of ID
+          </div>
+
+          <p>(Back of ID)</p>
 
         </div>
 
       </div>
+
+      <p class="format-text">
+
+        (Allowed document formats are : jpg, jpeg, png)
+
+      </p>
+
+      <p class="example-link">
+
+        Click here to view examples of proper upload or incorrect upload
+
+      </p>
+
+      <!-- RADIO -->
+
+      <div class="radio-group">
+
+        <label>
+
+          <input type="radio" checked>
+
+          Opt for Digital top up and redemption via digital payment methods
+
+        </label>
+
+        <label>
+
+          <input type="radio">
+
+          Opt for cash in and cash out at retail stores
+
+        </label>
+
+      </div>
+
+      <!-- BUTTON -->
 
       <div class="btn-row">
 
@@ -242,3 +378,55 @@
   </div>
 
 </section>
+
+<footer class="footer">
+
+  <div class="footer-left">
+
+    <p>Sports Betting Rules</p>
+
+    <p>How To Top Up</p>
+
+    <p>Locations</p>
+
+    <p>Account Tiers</p>
+
+  </div>
+
+  <div class="footer-center">
+
+    <h3>
+      © 2026, Supreme Ventures Gaming
+    </h3>
+
+    <p>
+      SV Games is a registered trademark
+      of Supreme Ventures Gaming
+    </p>
+
+    <p>
+      Supreme Ventures Gaming is a wholly owned subsidiary
+      of Supreme Ventures Limited
+    </p>
+
+    <p>
+      Address – 9A Retirement Crescent, Kingston 5.
+    </p>
+
+    <p>
+      Phone: 1 876-618-7678
+    </p>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p>Terms & Conditions</p>
+
+    <p>Privacy Policy</p>
+
+    <p>All Rights Reserved</p>
+
+  </div>
+
+</footer>
