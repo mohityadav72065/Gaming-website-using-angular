@@ -1,1 +1,165 @@
-<p>register works!</p>
+<nav>
+
+  <ul>
+
+    <li>
+      <a href="">
+        Home
+      </a>
+    </li>
+
+    <li>
+      Supreme Ventures Gaming
+    </li>
+
+    <li>
+      Lottery Games
+    </li>
+
+    <li>
+      JustBet
+    </li>
+
+    <li>
+      Acropolis Gaming
+    </li>
+
+    <li>
+      Help
+    </li>
+
+  </ul>
+
+  <div class="btns">
+
+    <button class="login-btn">
+      Login
+    </button>
+
+    <button class="register-btn">
+      Registration
+    </button>
+
+    <button class="download-btn">
+      Download
+    </button>
+
+  </div>
+
+</nav>
+
+<section class="register-section">
+
+  <div class="big-circle"></div>
+
+  <div class="register-container">
+
+    <h1>
+      Registration
+    </h1>
+
+    <div class="steps">
+
+      <div class="step active"></div>
+
+      <div class="line"></div>
+
+      <div class="step"></div>
+
+      <div class="line"></div>
+
+      <div class="step"></div>
+
+      <div class="line"></div>
+
+      <div class="step"></div>
+
+      <div class="line"></div>
+
+      <div class="step"></div>
+
+    </div>
+
+    <div class="register-card">
+
+      <h2>
+        Registration
+      </h2>
+
+      <p class="subtext">
+        Enter your mobile number to register.
+      </p>
+
+      <div class="row">
+
+        <div class="input-group">
+
+          <label>
+            Country code <span>*</span>
+          </label>
+
+          <select>
+
+            <option>
+              +91 (IN)
+            </option>
+
+            <option>
+              +1 (JM)
+            </option>
+
+          </select>
+
+        </div>
+
+        <div class="input-group">
+
+          <label>
+            Mobile Number <span>*</span>
+          </label>
+
+          <input
+          type="tel"
+          id="mobile"
+          placeholder="XXX-XXX-YYYY"
+          maxlength="12"
+          (input)="onlyNumbers($event)"
+          (blur)="checkMobile()">
+
+          <small
+          id="mobileError"
+          class="error-msg">
+
+            Please fill this field to continue
+
+          </small>
+
+        </div>
+
+      </div>
+
+      <p class="info">
+        You will receive a verification code on your mobile phone
+      </p>
+
+      <div class="btn-row">
+
+        <button class="cancel-btn">
+          Cancel
+        </button>
+
+        <button
+        class="send-btn"
+        (click)="sendCode()">
+
+          Send Code
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
