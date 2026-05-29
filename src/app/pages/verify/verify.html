@@ -3,30 +3,20 @@
   <ul>
 
     <li>
-      <a href="">
+      <a routerLink="">
         Home
       </a>
     </li>
 
-    <li>
-      Supreme Ventures Gaming
-    </li>
+    <li>Supreme Ventures Gaming</li>
 
-    <li>
-      Lottery Games
-    </li>
+    <li>Lottery Games</li>
 
-    <li>
-      JustBet ▼
-    </li>
+    <li>JustBet ▼</li>
 
-    <li>
-      Acropolis Gaming
-    </li>
+    <li>Acropolis Gaming</li>
 
-    <li>
-      Help ▼
-    </li>
+    <li>Help ▼</li>
 
   </ul>
 
@@ -72,7 +62,7 @@
 
       <div class="line"></div>
 
-      <div class="step"></div>
+      <div class="step active"></div>
 
       <div class="line"></div>
 
@@ -91,7 +81,7 @@
     <div class="verify-box">
 
       <h2>
-        Registration
+        Verification
       </h2>
 
       <div class="input-group">
@@ -101,8 +91,9 @@
         </label>
 
         <input
-        type="text"
-        id="code">
+          type="text"
+          id="code"
+          placeholder="Enter verification code">
 
       </div>
 
@@ -115,14 +106,14 @@
           </label>
 
           <input
-          type="text"
-          placeholder="Optional">
+            type="text"
+            placeholder="Optional">
 
         </div>
 
         <button
-        class="clear-btn"
-        (click)="clearCode()">
+          class="clear-btn"
+          (click)="clearCode()">
 
           Clear
 
@@ -137,16 +128,16 @@
       <div class="btn-row">
 
         <button
-        class="resend-btn"
-        (click)="resendCode()">
+          class="resend-btn"
+          (click)="resendCode()">
 
           Resend Code
 
         </button>
 
         <button
-        class="verify-btn"
-        (click)="verifyCode()">
+          class="verify-btn"
+          (click)="verifyCode()">
 
           Verify Code
 
@@ -154,8 +145,12 @@
 
       </div>
 
-      <button class="cancel-btn">
+      <button
+        class="cancel-btn"
+        routerLink="/register">
+
         Cancel
+
       </button>
 
     </div>
