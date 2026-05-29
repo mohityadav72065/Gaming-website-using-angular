@@ -1,9 +1,29 @@
 import { Component } from '@angular/core';
 
+import { Router, RouterLink } from '@angular/router';
+
 @Component({
   selector: 'app-address',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './address.html',
-  styleUrl: './address.css',
+  styleUrls: ['./address.css']
 })
-export class Address {}
+
+export class AddressComponent {
+
+  constructor(private router: Router) {}
+
+  goBack() {
+
+    this.router.navigate(['/personal']);
+
+  }
+
+  saveAndContinue() {
+
+    alert('Next Registration Step');
+
+  }
+
+}
