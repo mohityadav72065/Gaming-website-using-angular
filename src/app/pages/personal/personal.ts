@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   selector: 'app-personal',
   imports: [],
   templateUrl: './personal.html',
-  styleUrl: './personal.css'
+  styleUrls: ['./personal.css']
 })
 
 export class Personal {
